@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Send, Settings } from "lucide-react";
 
 // Mocking WebSocket URL - Change this to your deployed backend URL later
-const WS_URL = "ws://chat-backend-production-b8c6.up.railway.app/ws/chat/room_1";
+const WS_URL = "wss://chat-backend-production-b8c6.up.railway.app/ws/chat/room_1";
 
 export default function ChatRoom() {
   const [messages, setMessages] = useState<{text: string, isMe: boolean}[]>([]);
